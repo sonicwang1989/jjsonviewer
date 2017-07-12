@@ -1,0 +1,15 @@
+{
+  "name": "sonic.jsonViewer",
+  "description": "json viewer",
+  "main": "jsonViewer.js",
+  "authors": [
+    "SONIC"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "jjsonviewer",
+    "json",
+    "viewer"
+  ],
+  "homepage": ""
+}
