@@ -1,4 +1,0 @@
-test_page: "specs/SpecRunner.html"
-launch_in_dev: [PhantomJS]
-launch_in_ci: [PhantomJS]
-phantomjs_debug_port: 21000
