@@ -1,0 +1,96 @@
+﻿.json-view-container {
+    font-size: 14px;
+    line-height: 1.2;
+    font-family: SimSun;
+    padding-left: 12px;
+    margin-left: 8px;
+    overflow: auto;
+}
+.json-view-container,
+.json-view-container ul{
+    list-style: none !important;
+}
+.json-view-container ul{
+    padding: 0px !important;
+    padding-left: 20px !important;
+    margin: 0px !important;
+}
+
+.json-view-container li {
+    position: relative;
+}
+
+.json-view-container > li  > .key,
+.json-view-container .array .key {
+    display: none;
+}
+
+.json-view-container .array .object .key {
+    display: inline;
+}
+
+.json-view-container li:after {
+    content: ",";
+}
+
+.json-view-container li:last-child:after {
+    content: "";
+}
+
+.json-view-container .null {
+    color: #004ed0;
+}
+.json-view-container .string {
+    color: green;
+}
+.json-view-container .number {
+    color: #ee422e;
+}
+.json-view-container .boolean {
+    color: #ff8c00;
+}
+.json-view-container .key {
+    color: #1a1a1a;
+    padding-right:5px;
+}
+.json-error {
+    margin: 10px;
+    color: rgb(239, 62, 62);
+}
+.json-view-container .expanded {
+    cursor: pointer;
+}
+.json-view-container .expanded:before {
+    content: "▾";
+    font-size: 20px;
+    color: #000;
+    width: 13px;
+    text-align: center;
+    line-height: 13px;
+    position: absolute;
+    left: -15px;
+    top: 10px;
+}
+
+.json-view-container .collapsed:before {
+    content: "▸";
+    font-size: 20px;
+    color: #000;
+    top: 10px;
+}
+
+.json-view-container li .collapsed ~ .close:before {
+    content: "... ";
+    color: #999;
+}
+
+.json-view-container .hidden ~ ul {
+  display: none;
+}
+
+.json-view-container span {
+    position: static !important;
+    display:inline-block;
+    height:20px;
+    line-height:20px;
+}

@@ -2,18 +2,18 @@
 <head>
 	<title>jJsonViewer</title>
 
-	<link rel="stylesheet" href="css/jjsonviewer.css">
+	<link rel="stylesheet" href="css/jsonViewer.css">
 </head>
 <body>
-	<div id="jjson" class="jjson"></div>
+	<div id="json" class="json"></div>
 
 	<script type="text/javascript" src="js/lib/jquery.js"></script>
-	<script type="text/javascript" src="js/jjsonviewer.js"></script>
+	<script type="text/javascript" src="js/jsonViewer.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
-			var jjson = '{ "name": "jJsonViewer","author": { "name": "Shridhar Deshmukh", "email": "shridhar.deshmukh3@gmail.com", "contact": [{"location": "<span>office</span>", "number": 123456}, {"location": "home", "number": 987654}] } }';
+			var json = {"data":{"baseUnitId":null,"brand":{"brandId":46,"code":"0605","createChannel":null,"createTime":"2017-06-05 00:00:00","fromDB":true,"name":"梵迪","state":"UnChanged","status":"1","subTableIsFromDBMap":null},"brandId":46,"cacheTime":null,"code":"CS071202","createBy":"admin","createTime":"2017-07-12 11:33:13","ctrlMode":null,"fromDB":true,"goodsAttribute":[{"attrId":93,"attrValueId":46,"attrValueInput":"","attributeValue":{"attributeValueId":46,"code":"9301","fromDB":true,"name":"童镯1","state":"UnChanged","subTableIsFromDBMap":null},"categoryTreeId":"6","categoryTreeNodeId":"cb224ffbd50b4e02a688aacb662b1df4","code":null,"fromDB":true,"goodsExtId":409182,"goodsId":56515,"state":"UnChanged","subTableIsFromDBMap":null}],"goodsId":56515,"modifyBy":"admin","modifyTime":"2017-07-12 11:55:35","name":"测试接口","path":null,"state":"UnChanged","status":"1","subTableIsFromDBMap":null},"result":"SUCCESS","success":true};
 
-			$("#jjson").jJsonViewer(jjson);
+			$("#json").jsonViewer(json);
 		});
 	</script>
 </body>
