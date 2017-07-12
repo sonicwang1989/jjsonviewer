@@ -34,7 +34,7 @@
     }
 
     JsonViewer.prototype.getExpanderClasses = function (expanded) {
-        if (!expanded) return 'expanded collapsed hidden';
+        if (!expanded) return 'expanded collapsed hide-object';
         return 'expanded';
     }
 
@@ -110,7 +110,7 @@
         event.stopPropagation();
         var $self = $(this);
         $self.removeClass('collapsed').parent().find('>ul').slideDown(100, function () {
-            $self.removeClass('collapsed').removeClass('hidden');
+            $self.removeClass('collapsed').removeClass('hide-object');
         });
     });
 

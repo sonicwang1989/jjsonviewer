@@ -84,7 +84,7 @@
     color: #999;
 }
 
-.json-view-container .hidden ~ ul {
+.json-view-container .hide-object ~ ul {
   display: none;
 }
 
