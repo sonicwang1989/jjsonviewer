@@ -77,9 +77,9 @@
             return '<li>' + key + '<span class="null">null</span></li>';
         }
         if (type == 'object') {
-            var object = '<li><span class="' + expanderClasses + '"></span>' + key + ' <span class="open">' + open + '</span> <ul class="' + klass + '">';
+            var object = '<li><span class="' + expanderClasses + '"></span>' + key + ' <span class="open-object">' + open + '</span> <ul class="' + klass + '">';
             object = object + plugin.json2html(value, expanderClasses);
-            return object + '</ul><span class="close">' + close + '</span></li>';
+            return object + '</ul><span class="close-object">' + close + '</span></li>';
         }
         if (type == 'number' || type == 'boolean') {
             return '<li>' + key + '<span class="' + type + '">' + plugin.encode(value) + '</span></li>';

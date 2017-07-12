@@ -1,5 +1,5 @@
 {
-  "name": "sonic.jsonViewer",
+  "name": "sonic-json-viewer",
   "description": "json viewer",
   "main": "jsonViewer.js",
   "authors": [
