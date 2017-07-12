@@ -42,7 +42,7 @@
         var plugin = this;
         var html = '';
         level++;
-        if (level > plugin.options.expandedLevel) {
+        if (plugin.options.expanded && level > plugin.options.expandedLevel) {
             expanderClasses = plugin.getExpanderClasses(false);
         }
         for (var key in json) {
